@@ -1921,16 +1921,21 @@
     <div class="footer">
       © 2026 EcomPro Digit · Tous droits réservés · Formation 100% en ligne
     </div>
-
     <script>
       function toggleDay(card) {
         const isOpen = card.classList.contains("open");
+
         document
           .querySelectorAll(".day-card.open")
           .forEach((c) => c.classList.remove("open"));
+
         if (!isOpen) card.classList.add("open");
       }
+
       document.querySelector(".day-card").classList.add("open");
     </script>
+
+    <!-- Vercel Analytics -->
+    <script defer src="https://va.vercel-scripts.com/v1/script.js"></script>
   </body>
 </html>
